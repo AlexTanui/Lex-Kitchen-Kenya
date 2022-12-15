@@ -1,0 +1,49 @@
+{
+    "meals": [
+    {
+    "strMeal": "ugali",
+    "strMealThumb": "https://weeatatlast.com/wp-content/uploads/2021/05/ugali-on-a-plate.jpg",
+    "idMeal": "1"
+    },
+    {
+    "strMeal": "Kuku",
+    "strMealThumb": "https://img-global.cpcdn.com/recipes/9fa35726c98226d9/680x482cq70/kienyeji-kuku-wet-fry-recipe-main-photo.webp",
+    "idMeal": "2"
+    },
+    {
+    "strMeal": "Kienyeji eggs",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
+    "idMeal": "3"
+    },
+    {
+    "strMeal": "Kuku and Leek Pie",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg",
+    "idMeal": "4"
+    },
+    {
+    "strMeal": "Kuku Quinoa Greek Salad",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg",
+    "idMeal": "5"
+    },
+    {
+    "strMeal": "Sukuma wiki",
+    "strMealThumb": "https://weeatatlast.com/wp-content/uploads/2020/08/Sukuma-Wiki-Recipe-braised-collard-greens.jpg",
+    "idMeal": "6"
+    },
+    {
+    "strMeal": "Ugali brown",
+    "strMealThumb": "https://res.feednews.com/assets/v2/fbe8c2d5e44145c4b192f11a0d095713?width=450&height=336&quality=hq&category=ng_Food",
+    "idMeal": "7"
+    },
+    {
+    "strMeal": "Matoke",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/vwrpps1503068729.jpg",
+    "idMeal": "8"
+    },
+    {
+    "strMeal": "Nyama Choma",
+    "strMealThumb": "https://weeatatlast.com/wp-content/uploads/2021/05/nyama-choma-.jpg",
+    "idMeal": "9"
+    }
+    ]
+    }

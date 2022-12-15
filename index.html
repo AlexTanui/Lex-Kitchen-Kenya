@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <title>lex kitchen|Top kenyan quisin</title>
+</head>
+
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/cheflex_edited.webp" alt="Logo" width="100" height="50"
+                    class="d-inline-block align-text-top">
+                <a class="navbar-brand text-light  me-3 fw-bold" href="index.html">Lex kitchen</a>
+            </a>
+            <ul class="navbar-nav me-auto d-flex flex-row">
+                <li class="nav-item me-5">
+                    <a class="text-light nav-link" id="kenyaMeal" href="#">Food list </a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-light nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-outline-danger">contact</button>
+        </div>
+
+    </nav>
+    <div class="card mb-3" style="max-width: 8000px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="./images/shef lex.jpg" class="img-fluid rounded-start" alt="chef image">
+            </div>
+            <div class="col-md-4 ">
+                <div class="card-body">
+                    <h5 class="card-title">My Name is Chef Lex kamau<br></br></h5>
+                    <p class="card-text"> I have become a valuable resource for professional chef recipes, professional cooking advice, and news from the culinary industry. Chef's lex kitchen was started in 2019 during the pandemic. In addition to recipes, our featured Chefs also share culinary techniques, advice on cooking materials, and lots of tips for home cooks.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- log in section -->
+    <section id="sign-in">
+        <div class="container-login">
+            <hi class="label">user login</hi>
+        </div>
+        <form class="login-form"  name="form">
+            <div class="font">Email or user name</div>
+            <input type="type" name="email" />
+            <div class="email-error">please eneter valid email or phone</div>
+            <div class="font">Password</div>
+            <input type="password" name="password"/><br>
+            <div class="pass-error">please eneter valid passord</div>
+            <button onclick="showItems()" id="loginbtn" type="button">Log-in</button>
+        </form>
+        
+    </section>
+
+    <!-- meal details section -->
+   
+<section id="hide-meals">
+
+    <div class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title">Get Ingredients and cooking instructions for your fevorite Food </h2>
+                <blockquote><i id="quote" class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>Real food doesn't have ingredients, real food is ingredients.<br>
+                    <cite>- Jamie Oliver</cite>
+                </blockquote>
+
+                <div class="meal-search-box">
+                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="meal-result">
+                <h2 class="title">Your Search Results:</h2>
+                <div id="meal">
+                    <!-- meal item -->
+                    <!-- <div class = "meal-item">
+                <div class = "meal-img">
+                  <img src = "food.jpg" alt = "food">
+                </div>
+                <div class = "meal-name">
+                  <h3>Potato Chips</h3>
+                  <a href = "#" class = "recipe-btn">Get Recipe</a>
+                </div>
+              </div> -->
+                    <!-- end of meal item -->
+                </div>
+            </div>
+
+
+            <div class="meal-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                <div class="meal-details-content">
+                    <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+              <p class = "recipe-category">Category Name</p>
+              <div class = "recipe-instruct">
+                <h3>Instructions:</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+              </div>
+              <div class = "recipe-meal-img">
+                <img src = "food.jpg" alt = "">
+              </div>
+              <div class = "recipe-link">
+                <a href = "#" target = "_blank">Watch Video</a>
+              </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="kenyamealsbtn" type="button" class="btn btn-primary position-relative">
+        Kenya food
+         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+           10+
+           <span class="visually-hidden">unread messages</span>
+         </span>
+         
+        </button>
+        <section class="product">
+            <button class="pre-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            <button class="nxt-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></i></button>
+            <div id="btnKenya" class="btnkenya">
+      
+                <div id="meal">
+                  <!-- meal item -->
+                  <!-- <div class = "meal-item">
+              <div class = "meal-img">
+                <img src = "food.jpg" alt = "food">
+              </div>
+              <div class = "meal-name">
+                <h3>Potato Chips</h3>
+                <a href = "#" class = "recipe-btn">Get Recipe</a>
+              </div>
+            </div> -->
+                  <!-- end of meal item -->
+              </div>
+          </div>
+
+        </section>
+   
+    <form id="addIngridients" style="max-width: 800px;">
+        <div class="mb-1 " >
+          <label for="exampleInputEmail1" class="form-label">Meal name</label>
+          <input type="text" class="form-control"  aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Meal ingridients</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Meal preparation</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Meal image</label>
+            <input type="link" class="form-control" id="exampleInputPassword1">
+          </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+</section>
+ <section  class="footer">
+    <div id="footer-detail" class="subscribe">
+    
+     <a class="text-light nav-link fst-italic" href="#">subscribe </a>    
+     <a  class="text-light nav-link fst-italic" href="#">Lex Kitchen @ 2022 </a>
+    </div>
+    </section> 
+    
+</body>
+<script src="./JS/index.js"></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "project-phase-one",
+  "version": "1.0.0",
+  "description": "lex kitchen",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json"
+  },
+  "keywords": [
+    "food",
+    "api",
+    "kitchen"
+  ],
+  "author": "Alex Tanui",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
