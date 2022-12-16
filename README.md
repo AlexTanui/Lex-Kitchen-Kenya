@@ -68,15 +68,15 @@ to use and test the code you can run
 
 * The landing page starts with a log-in section where the user enters his/her credentials to be allowed to access the application
 
-<img src="log-in.jpg"  width="150" height="150"/>
+<img src="./images/log-in.jpg"  width="200" height="150"/>
 
 * To search meal according to ingridient enter on the input space and click search
 
-<img src="search.jpg" width="150" height="150"/>
+<img src="./images/search.jpg" width="200" height="150"/>
 
 * To request fro ingridient put an image and meal name on the form and click submit.
 
-<img src="footer-submit.jpg" width="150" height="150"/>
+<img src="./images/footer-submit.jpg" width="200" height="150"/>
 
 ## Contributing
 
