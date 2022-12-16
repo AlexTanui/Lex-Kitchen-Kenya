@@ -2,7 +2,7 @@
 
 ## Discription
 
-Lex Kitchen is an application that allowsa a user to search for their favorite meal per ingridient. Its inspired by kenyan top chef, Lex who has a five star rating in preparing meals.This apllication uses mealDB and an local API with kenyan local meal.
+Lex Kitchen is an application that allows users to search for their favorite meal per ingridient. Its inspired by kenyan top chef, Lex who has a five star rating in preparing meals.This apllication uses mealDB and an local API with kenyan local meal.
 
 
 ## Built with
