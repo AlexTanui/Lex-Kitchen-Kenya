@@ -5,7 +5,7 @@ const kenyaMealapp= document.getElementById('btnKenya')
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 const hidesection= document.getElementById("hide-meals").style.display = "none";
-
+const form =document.getElementById('addIngridients')
 
 // for scrolling meals to right and left
 const productContainers = [...document.querySelectorAll('.product')];
@@ -116,6 +116,7 @@ fetch(`https://api.npoint.io/ef01e2173617e99ef7c1/meals/`).then((response) => re
         kenyaMealapp.append(foodKenya(data))
     
     })})
+ 
     
 
 function foodKenya ({strMeal,strMealThumb,}) {
@@ -136,3 +137,28 @@ function foodKenya ({strMeal,strMealThumb,}) {
     `;
     return container
 }
+// post new meal to get ingrideients
+form.addEventListener('submit', function(e){
+    // prevent auto submit
+    e.preventDefault()
+
+    let name = document.getElementById('strFood').value
+    let image= document.getElementById('strMealThumb').value
+
+    fetch("https://api.npoint.io/ef01e2173617e99ef7c1/meals/",{
+        method: 'POST',
+        body:JSON.stringify({
+            strMeal:strFood,
+            strMealThumb:strMealThumb
+        }),
+        headers:{
+            "content-Type":"applictaion/json; charset=UTF-8"
+        }
+    })
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        console.log(data)
+    })
+})

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
-    <title>lex kitchen|Top kenyan quisin</title>
+    <title>lex kitchen|Top  kenyan cuisine</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     <a class="text-light nav-link" href="#">About</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-outline-danger">contact</button>
+            <button type="button" class="btn btn-outline-danger"><a id="contact" href = "mailto: tanuialex417@gmail.com">Contact</a></button>
         </div>
 
     </nav>
@@ -165,22 +165,14 @@
 
         </section>
    
-    <form id="addIngridients" style="max-width: 800px;">
+    <form id="addIngridients" method="post" style="max-width: 800px;">
         <div class="mb-1 " >
           <label for="exampleInputEmail1" class="form-label">Meal name</label>
-          <input type="text" class="form-control"  aria-describedby="emailHelp">
+          <input type="text" id="strFood" class="form-control"  aria-describedby="emailHelp">
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Meal ingridients</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Meal preparation</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
-          </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Meal image</label>
-            <input type="link" class="form-control" id="exampleInputPassword1">
+            <input id="strMealThumb" type="link" class="form-control" id="exampleInputPassword1">
           </div>
        
         <button type="submit" class="btn btn-primary">Submit</button>

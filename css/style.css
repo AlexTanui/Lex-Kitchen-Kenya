@@ -53,6 +53,9 @@ body{
     outline: 0;
     font-size: 1.05rem;
 }
+#contact{
+    color: #f0f0f0;
+}
 .text{
     opacity: 0.8;
 }
