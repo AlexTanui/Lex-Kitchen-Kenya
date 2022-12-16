@@ -18,7 +18,7 @@ This application was built with the following technologies:
 
 ## Running The Live Hosted Application
 
-* open this [link]https://github.com/AlexTanui/Lex-Kitchen-Kenya) on your browser to access the live web application
+* open this [link](https://alextanui.github.io/Lex-Kitchen-Kenya/) on your browser to access the live web application
 * you can also follow the link on the right side of the repository below the discription
 * on the browser you will need to enter your credentials that is user name and password to access the meals. 
 * search for your meal and click recipe to get cooking instructions.
