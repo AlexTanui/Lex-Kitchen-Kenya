@@ -1,4 +1,4 @@
-# FlatDjango
+# Lex Kitchen
 
 ## Discription
 
