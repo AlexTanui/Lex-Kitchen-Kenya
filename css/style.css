@@ -587,6 +587,13 @@ body{
 #postBtn:hover{
     background-color: #d65108;
 }
+.fill-section h2{
+    font-style: italic;
+    font-family:"montserrat" , sans-serif;
+    font-weight: bold;
+    color: #208edc;
+    margin-left: 100px;
+}
 /* Media Queries */
 @media screen and (min-width: 600px){
     .meal-search-box{
