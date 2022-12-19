@@ -110,7 +110,7 @@ function mealRecipeModal(meal){
 }
 
 // funtion to create kenya meals
-fetch(`https://api.npoint.io/391f2f0ede9e5464bbbe/meals/`).then((response) => response.json())
+fetch(`https://api.npoint.io/2eea172ce6ce1997759e/meals/`).then((response) => response.json())
 .then(json=>{json.map(data=>
    
     {console.log(data)
@@ -147,7 +147,7 @@ form.addEventListener('submit', function(e){
     let name = document.getElementById('strFood').value
     let image= document.getElementById('strMealThumb').value
 
-    fetch("https://api.npoint.io/ef01e2173617e99ef7c1/meals/",{
+    fetch("https://api.npoint.io/2eea172ce6ce1997759e/meals/",{
         method: 'POST',
         body:JSON.stringify({
             strMeal:strFood,
