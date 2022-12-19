@@ -63,6 +63,7 @@ body{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+/* log-in form */
 .login-form .font{
     font-size: 18px;
     color: #130f40;
@@ -350,7 +351,36 @@ body{
     padding-left: 500px;
     margin-top: 0px;
 }
-
+/* subscribe form */
+.subscribe h2{
+    font-style: italic;
+    font-family:"montserrat" , sans-serif;
+    font-weight: bold;
+    color: #208edc;
+    margin-left: 200px;
+}
+#subscribe{
+    margin-left: 200px;
+    display: flex;
+  
+}
+#newsletter{
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #b54507;
+}
+#newsletterbtn{
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 40px ;
+    
+}
+#newsletterbtn:hover{
+    background-color: #d65108;
+}
 
 /*  */
 .notFound{
@@ -483,7 +513,53 @@ body{
 #footer-detail a:hover{
     color: #b54507;
 }
+#fb {
+    background: #fffbfb;
+    border-radius: 50%;
+    color: #fff;
+}
+#fb:hover{
+    background: #b54507;
+}
 
+#ig{
+    background: #fffbfb;
+    border-radius: 50%;
+    color: #fff;
+}
+#ig:hover{
+    background: #b54507;
+}
+#twitter{
+    background: #fffbfb;
+    border-radius: 50%;
+    color: #fff;
+}
+#twitter:hover{
+    background: #b54507;
+}
+#youtube{
+    background: #fffbfb;
+    border-radius: 40%;
+    color: #fff;
+}
+#youtube:hover{
+    background: #b54507;
+}
+#location{
+    background: #fffbfb;
+    border-radius: 70%;
+    color: #fff;
+    margin-left: 500px;
+}
+#location:hover{
+    background: #b54507;
+
+}
+/* fill section */
+.fill-section{
+    display: flex;
+}
 /* Media Queries */
 @media screen and (min-width: 600px){
     .meal-search-box{
