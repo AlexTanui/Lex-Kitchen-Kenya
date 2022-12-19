@@ -12,48 +12,52 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-   
+
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
     <title>lex kitchen | Top Cuisine</title>
 </head>
 
 <body>
-    <nav id="topsection"  class="navbar bg-primary">
+    <nav id="topsection" class="navbar bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/cheflex_new.png" alt="Logo" width="100" height="50"
                     class="d-inline-block align-text-top">
                 <a id="kitchen" class="navbar-brand text-light  me-3 fw-bold" href="index.html">Lex kitchen</a>
             </a>
-            <ul  class="navbar-nav me-auto d-flex flex-row">
+            <ul class="navbar-nav me-auto d-flex flex-row">
                 <li class="nav-item me-5">
                     <a class="text-light nav-link" id="kenyaMeal" href="#foodlist">Kenyan Food </a>
                 </li>
                 <li class="nav-item">
-                    <a  class="text-light nav-link" href="#about">About</a>
+                    <a class="text-light nav-link" href="#about">About</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-outline-danger"><a id="contact" href = "mailto: tanuialex417@gmail.com">Contact</a></button>
+            <button type="button" class="btn btn-outline-danger"><a id="contact"
+                    href="mailto: tanuialex417@gmail.com">Contact</a></button>
         </div>
 
     </nav>
     <div class="card mb-3" style="max-width: 8000px;">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="./images/shef lex.jpg" class="img-fluid rounded-start" alt="chef image" width="400px" >
+                <img src="./images/shef lex.jpg" class="img-fluid rounded-start" alt="chef image" width="400px">
             </div>
             <div class="col-md-4 ">
                 <div id="about" class="card-body">
-                    <img src="./images/pexels-rajesh-tp-1633578.jpg" width="100px" height="100px"/>
+                    <img src="./images/pexels-rajesh-tp-1633578.jpg" width="100px" height="100px" />
                     <h5 class="card-title">My Name is Chef Lex kamau<br></br></h5>
-                    <p class="card-text"> I have become a valuable resource for professional chef recipes, professional cooking advice, and news from the culinary industry. Chef's lex kitchen was started in 2019 during the pandemic. In addition to recipes, our featured Chefs also share culinary techniques, advice on cooking materials, and lots of tips for home cooks.</p>
+                    <p class="card-text"> I have become a valuable resource for professional chef recipes, professional
+                        cooking advice, and news from the culinary industry. Chef's lex kitchen was started in 2019
+                        during the pandemic. In addition to recipes, our featured Chefs also share culinary techniques,
+                        advice on cooking materials, and lots of tips for home cooks.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
-                    
+
                 </div>
             </div>
         </div>
@@ -63,43 +67,45 @@
         <div class="container-login">
             <hi class="label">user login</hi>
         </div>
-        <form class="login-form"  name="form">
+        <form class="login-form" name="form">
             <div class="font">Email or user name</div>
             <input type="type" name="email" />
             <div class="email-error">please eneter valid email or phone</div>
             <div class="font">Password</div>
-            <input type="password" name="password"/><br>
+            <input type="password" name="password" /><br>
             <div class="pass-error">please eneter valid passord</div>
             <button onclick="showItems()" id="loginbtn" type="button">Log-in</button>
         </form>
-        
+
     </section>
-   
+
     <!-- meal details section -->
-   
-<section id="hide-meals">
 
-    <div class="container">
-        <div class="meal-wrapper">
-            <div class="meal-search">
-                <h2 class="title">Get Ingredients and cooking instructions for your fevorite Food </h2>
-                <blockquote><i id="quote" class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>“Cooking with kids is not just about ingredients, recipes, and cooking.<br> It’s about harnessing imagination, empowerment, and creativity.”<br>
-                    <cite>- Guy Fieri</cite>
-                </blockquote>
+    <section id="hide-meals">
 
-                <div class="meal-search-box">
-                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
-                    <button type="submit" class="search-btn btn" id="search-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
+        <div class="container">
+            <div class="meal-wrapper">
+                <div class="meal-search">
+                    <h2 class="title">Get Ingredients and cooking instructions for your fevorite Food </h2>
+                    <blockquote><i id="quote" class="fa fa-quote-left fa-3x fa-pull-left fa-border"
+                            aria-hidden="true"></i>“Cooking with kids is not just about ingredients, recipes, and
+                        cooking.<br> It’s about harnessing imagination, empowerment, and creativity.”<br>
+                        <cite>- Guy Fieri</cite>
+                    </blockquote>
+
+                    <div class="meal-search-box">
+                        <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                        <button type="submit" class="search-btn btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="meal-result">
-                <h2 class="title">Your Search Results:</h2>
-                <div id="meal">
-                    <!-- meal item -->
-                    <!-- <div class = "meal-item">
+                <div class="meal-result">
+                    <h2 class="title">Your Search Results:</h2>
+                    <div id="meal">
+                        <!-- meal item -->
+                        <!-- <div class = "meal-item">
                 <div class = "meal-img">
                   <img src = "food.jpg" alt = "food">
                 </div>
@@ -108,25 +114,25 @@
                   <a href = "#" class = "recipe-btn">Get Recipe</a>
                 </div>
               </div> -->
-                    <!-- end of meal item -->
+                        <!-- end of meal item -->
+                    </div>
                 </div>
-            </div>
 
-            <div id="listofmeals" class="food-list">
-                <!-- <ul class="list-group">
+                <div id="listofmeals" class="food-list">
+                    <!-- <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">List of food</li>
                     <li class="list-group-item">A second item</li>
                 </ul> -->
-            </div>
-            <div class="meal-details">
-                <!-- recipe close btn -->
-                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
-                    <i class="fas fa-times"></i>
-                </button>
+                </div>
+                <div class="meal-details">
+                    <!-- recipe close btn -->
+                    <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
 
-                <!-- meal content -->
-                <div class="meal-details-content">
-                    <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+                    <!-- meal content -->
+                    <div class="meal-details-content">
+                        <!-- <h2 class = "recipe-title">Meals Name Here</h2>
               <p class = "recipe-category">Category Name</p>
               <div class = "recipe-instruct">
                 <h3>Instructions:</h3>
@@ -139,26 +145,26 @@
               <div class = "recipe-link">
                 <a href = "#" target = "_blank">Watch Video</a>
               </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <button id="kenyamealsbtn" type="button" class="btn btn-primary position-relative">
-        Kenya food
-         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-           10+
-           <span class="visually-hidden">unread messages</span>
-         </span>
-         
+        <button id="kenyamealsbtn" type="button" class="btn btn-primary position-relative">
+            Kenya food
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                10+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+
         </button>
         <section id="foodlist" class="product">
             <button class="pre-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
             <button class="nxt-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></i></button>
             <div id="btnKenya" class="btnkenya">
-      
+
                 <div id="meal">
-                  <!-- meal item -->
-                  <!-- <div class = "meal-item">
+                    <!-- meal item -->
+                    <!-- <div class = "meal-item">
               <div class = "meal-img">
                 <img src = "food.jpg" alt = "food">
               </div>
@@ -167,47 +173,52 @@
                 <a href = "#" class = "recipe-btn">Get Recipe</a>
               </div>
             </div> -->
-                  <!-- end of meal item -->
-              </div>
-          </div>
+                    <!-- end of meal item -->
+                </div>
+            </div>
 
         </section>
-   <div class="fill-section">
-    <form id="addIngridients" method="post" style="max-width: 800px;">
-        <h2>Add Meal</h2>
-        <div class="mb-1 " >
-          <input type="text" id="strFood" class="form-control" placeholder="meal name"  aria-describedby="emailHelp">
-        </div>
-          <div class="mb-3">
-            <input id="strMealThumb" type="link" class="form-control" placeholder="meal image link" id="exampleInputPassword1">
-          </div>
-       
-        <button id="postBtn"type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <section class="subscribe">
-        <h2>Join Our Newsletter</h2>
-        
-        <form id="subscribe">
-        <input id="newsletter" type="email" class="form-control" placeholder="enter email">
-         <button id="newsletterbtn" type="submit" class="btn btn-primary">Subscribe</button>
-        </form>
-      </section>
-   </div>
-    
-   
+        <div class="fill-section">
+            <form id="addIngridients" method="post" style="max-width: 800px;">
+                <h2>Add Meal</h2>
+                <div class="mb-1 ">
+                    <input type="text" id="strFood" class="form-control" placeholder="meal name"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <input id="strMealThumb" type="link" class="form-control" placeholder="meal image link"
+                        id="exampleInputPassword1">
+                </div>
 
-</section>
- <section  class="footer">
-    <div id="footer-detail" class="subscribe">
-    <a  class="text-light nav-link fst-italic" href="#">Lex Kitchen @ 2022 </a>
-    <img id="locaion" src="https://img.icons8.com/material-sharp/24/null/place-marker.png"><h7>Nairobi Kenya PO BOX 30100-4646</h7> 
-     <img id="fb" src="./images/facebook.svg" alt=""/>
-     <img id="ig" src="./images/intagram.svg" alt=""/>
-     <img id="twitter" src="./images/twitter.svg" alt=""/>
-     <img id="youtube" src="./images/youtube-black.svg" alt=""/>
-    </div>
-    </section> 
-    
+                <button id="postBtn" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <section class="subscribe">
+                <h2>Join Our Newsletter</h2>
+
+                <form id="subscribe">
+                    <input id="newsletter" type="email" class="form-control" placeholder="enter email">
+                    <button id="newsletterbtn" type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </section>
+        </div>
+
+
+
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <div id="footer-detail" class="subscribe">
+            <a class="text-light nav-link fst-italic" href="#">Lex Kitchen @ 2022 </a>
+            <img id="locaion" src="https://img.icons8.com/material-sharp/24/null/place-marker.png">
+            <h7>Nairobi Kenya PO BOX 30100-4646</h7>
+            <img id="fb" src="./images/facebook.svg" alt="" />
+            <img id="ig" src="./images/intagram.svg" alt="" />
+            <img id="twitter" src="./images/twitter.svg" alt="" />
+            <img id="youtube" src="./images/youtube-black.svg" alt="" />
+        </div>
+    </section>
+
 </body>
 <script src="./JS/index.js"></script>
+
 </html>
