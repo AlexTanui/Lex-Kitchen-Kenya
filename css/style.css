@@ -19,9 +19,12 @@ body{
  
 
 }
+/* about section */
 #about:hover{
    color: #d65108;
 }
+
+/* main log=in section */
 .container-login{
     position:relative;
     margin-top: 30px;
@@ -117,7 +120,7 @@ body{
     display: none   ;
 
 }
-/*  */
+/* search section for meals */
 .container{
     min-height: 100vh;
 }
@@ -393,7 +396,7 @@ body{
     font-weight: 600;
     width: 100%;
 }
-
+/* for kenya meals */
 #btnKenya{
     margin-left: 200px;
 }
@@ -562,6 +565,27 @@ body{
 /* fill section */
 .fill-section{
     display: flex;
+}
+/* post form  */
+#strFood{
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #b54507;
+}
+#strMealThumb{
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #b54507;
+}
+#postBtn{
+    border-radius: 20px;
+}
+#postBtn:hover{
+    background-color: #d65108;
 }
 /* Media Queries */
 @media screen and (min-width: 600px){
