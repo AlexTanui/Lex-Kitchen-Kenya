@@ -125,7 +125,7 @@ function foodKenya ({strFood,strMealThumb}) {
    container.innerHTML =`
                  <div id="space" class = "meal-item">
                 <div class = "meal-img">
-                      <img src = "${strMealThumb}" alt = "food">
+                      <img src = "${strMealThumb}" alt = "Food">
                      </div>
              <div class = "meal-name">
              <h3>${strFood}</h3>
