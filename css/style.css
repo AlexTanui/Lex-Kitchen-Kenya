@@ -16,12 +16,19 @@ body{
     font-family: 'Poppins', sans-serif;
     align-items: center;
     justify-content: center;
- 
+
 
 }
 /* about section */
 #about:hover{
    color: #d65108;
+}
+#about img{
+    border-radius: 50%;
+    display: flexbox;
+    padding-left: -20px;
+    margin-left: 80px;
+   margin-bottom: 10px;
 }
 
 /* main log=in section */
