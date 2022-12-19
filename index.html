@@ -18,19 +18,19 @@
 </head>
 
 <body>
-    <nav class="navbar bg-primary">
+    <nav id="topsection"  class="navbar bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/cheflex_new.png" alt="Logo" width="100" height="50"
                     class="d-inline-block align-text-top">
-                <a class="navbar-brand text-light  me-3 fw-bold" href="index.html">Lex kitchen</a>
+                <a id="kitchen" class="navbar-brand text-light  me-3 fw-bold" href="index.html">Lex kitchen</a>
             </a>
-            <ul class="navbar-nav me-auto d-flex flex-row">
+            <ul  class="navbar-nav me-auto d-flex flex-row">
                 <li class="nav-item me-5">
-                    <a class="text-light nav-link" id="kenyaMeal" href="#">Food list </a>
+                    <a class="text-light nav-link" id="kenyaMeal" href="#foodlist">Food list </a>
                 </li>
                 <li class="nav-item">
-                    <a class="text-light nav-link" href="#">About</a>
+                    <a  class="text-light nav-link" href="#about">About</a>
                 </li>
             </ul>
             <button type="button" class="btn btn-outline-danger"><a id="contact" href = "mailto: tanuialex417@gmail.com">Contact</a></button>
@@ -43,7 +43,7 @@
                 <img src="./images/shef lex.jpg" class="img-fluid rounded-start" alt="chef image">
             </div>
             <div class="col-md-4 ">
-                <div class="card-body">
+                <div id="about" class="card-body">
                     <h5 class="card-title">My Name is Chef Lex kamau<br></br></h5>
                     <p class="card-text"> I have become a valuable resource for professional chef recipes, professional cooking advice, and news from the culinary industry. Chef's lex kitchen was started in 2019 during the pandemic. In addition to recipes, our featured Chefs also share culinary techniques, advice on cooking materials, and lots of tips for home cooks.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -73,7 +73,7 @@
         </form>
         
     </section>
-
+   
     <!-- meal details section -->
    
 <section id="hide-meals">
@@ -111,7 +111,12 @@
                 </div>
             </div>
 
-
+            <div id="listofmeals" class="food-list">
+                <!-- <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">List of food</li>
+                    <li class="list-group-item">A second item</li>
+                </ul> -->
+            </div>
             <div class="meal-details">
                 <!-- recipe close btn -->
                 <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
@@ -145,7 +150,7 @@
          </span>
          
         </button>
-        <section class="product">
+        <section id="foodlist" class="product">
             <button class="pre-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
             <button class="nxt-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></i></button>
             <div id="btnKenya" class="btnkenya">
@@ -200,8 +205,6 @@
      <img id="ig" src="./images/intagram.svg" alt=""/>
      <img id="twitter" src="./images/twitter.svg" alt=""/>
      <img id="youtube" src="./images/youtube-black.svg" alt=""/>
-     
-     <a href=""><i class="fa fa-linkedin"></i>
     </div>
     </section> 
     

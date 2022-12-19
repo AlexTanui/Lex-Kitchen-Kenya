@@ -1,5 +1,6 @@
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
+const listofmeals= document.getElementById('listofmeals')
 const btnKenya =document.getElementById('kenyameals')
 const kenyaMealapp= document.getElementById('btnKenya')
 const mealDetailsContent = document.querySelector('.meal-details-content');
@@ -109,7 +110,7 @@ function mealRecipeModal(meal){
 }
 
 // funtion to create kenya meals
-fetch(`https://api.npoint.io/ef01e2173617e99ef7c1/meals/`).then((response) => response.json())
+fetch(`https://api.npoint.io/391f2f0ede9e5464bbbe/meals/`).then((response) => response.json())
 .then(json=>{json.map(data=>
    
     {console.log(data)
@@ -119,7 +120,7 @@ fetch(`https://api.npoint.io/ef01e2173617e99ef7c1/meals/`).then((response) => re
  
     
 
-function foodKenya ({strMeal,strMealThumb,}) {
+function foodKenya ({strFood,strMealThumb}) {
     let container =document.createElement("container")
    container.innerHTML =`
                  <div id="space" class = "meal-item">
@@ -127,9 +128,10 @@ function foodKenya ({strMeal,strMealThumb,}) {
                       <img src = "${strMealThumb}" alt = "food">
                      </div>
              <div class = "meal-name">
-             <h3>${strMeal}</h3>
+             <h3>${strFood}</h3>
              <a href = "#" class = "recipe-btn">Get Recipe</a>
             </div>
+        </div>
                  </div> >
        <!-- end of meal item -->
               
@@ -162,3 +164,40 @@ form.addEventListener('submit', function(e){
         console.log(data)
     })
 })
+// funtion to display section and hide log in
+function showItems(){
+document.getElementById("hide-meals").style.display = "block";
+document.getElementById("sign-in").style.display = "none";
+}
+
+// function to get meal list that matches with the ingredients
+function getMealList(){
+    let searchInputTxt = document.getElementById('search-input').value.trim();
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
+    .then(response => response.json())
+    .then(data => {
+        let html = "";
+        if(data.meals){
+            data.meals.forEach(meal => {
+                html += `
+                    <div class = "meal-item" data-id = "${meal.idMeal}">
+                        <div class = "meal-img">
+                            <img src = "${meal.strMealThumb}" alt = "food">
+                        </div>
+                        <div class = "meal-name">
+                            <h3>${meal.strMeal}</h3>
+                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+                `;
+            });
+            mealList.classList.remove('notFound');
+        } else{
+            html = "Sorry, we didn't find any meal!";
+            mealList.classList.add('notFound');
+        }
+
+        mealList.innerHTML = html;
+    });
+}
+     
